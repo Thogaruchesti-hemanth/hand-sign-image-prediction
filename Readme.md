@@ -1,20 +1,41 @@
-# Sign Language Digits Recognition
+# Sign Language Digits Recognition 👋🔢
 
-A deep learning project to recognise sign language digits (0-9) using convolutional neural networks.
+A deep learning model that accurately classifies hand sign images representing digits 0-9 using convolutional neural networks. Achieves over 95% accuracy on the Sign Language Digits Dataset.
 
-## Project Overview
+## 🌟 Features
 
-This project implements a CNN model to classify hand sign images representing digits 0-9 from the Sign Language Digits Dataset. The model achieves over 95% accuracy on the test set.
+- CNN architecture with 4 convolutional layers
+- Data preprocessing and normalization
+- Comprehensive training and evaluation pipeline
+- Visualization of training metrics and confusion matrix
+- Model checkpointing and saving
 
-## Dataset
+## 📊 Results
 
-The dataset consists of 64×64 grayscale images of hand signs representing digits 0-9. The dataset is stored in .npy format:
-- X.npy: Images array
-- Y.npy: Labels array
+- **Training accuracy**: 95.26%
+- **Test accuracy**: 95.81%
+- **Precision**: 96% (macro average)
+- **Recall**: 96% (macro average)
 
-Source: [Sign Language Digits Dataset on Kaggle](https://www.kaggle.com/datasets/ardamavi/sign-language-digits-dataset)
+## 🚀 Quick Start
 
-## Project Structure
+```bash
+# Clone the repository
+git clone https://github.com/your-username/sign-language-digits-recognition.git
+cd sign-language-digits-recognition
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Download dataset (place X.npy and Y.npy in data folder)
+# Train the model
+python src/train.py
+
+# Evaluate the model
+python src/evaluate.py
+```
+
+##📁 Project Structure
 
 ```
 sign-language-digits-recognition/
@@ -75,19 +96,15 @@ The CNN architecture consists of:
 - 4 convolutional layers with max pooling and dropout
 - 2 fully connected layers
 - Output layer with softmax activation
+- Total parameters: 164,618
 
-Total parameters: 164,618
+## 📝 License
 
-## Contributing
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-## License
-
-This project is licensed under the MIT License.
-
-## Author
+## 👨‍💻 Author
 
 Thogaruchesti Hemanth
-
-```
